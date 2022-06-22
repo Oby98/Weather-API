@@ -8,10 +8,10 @@ def get_median(arr)
   (sorted[mid-1,2].sum/2.0).round(1)
 end
 
-cities_data = []
 cities = [['Copenhagen','Denmark'], ['Lodz','Poland'], ['Brussels','Belgium'], ['Islamabad','Pakistan']]
 
 puts "city        wind_avg    wind_median     temp_avg     temp_median "
+
 cities.each do|city,country|
 
   endpoint = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/#{city},%20#{country}/last29days?unitGroup=us&include=days&key=WQQ3LTJVN6Y6SV623RCLEK6RK&contentType=json"
